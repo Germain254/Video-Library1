@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calisthens_fitness V-Library</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+
+     <style>
+    body {
+      background-color: #1d1d1d;
+      color: #fff;
+    }
+    
+    iframe {
+      border: none;
+      border-radius: 8px;
+    }
+    .card {
+      background-color: #161616;
+      color: #fff;
+      cursor: pointer;
+      transition: transform 0.2s;
+      height: auto;
+      width: auto;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    </style>
+
+
+</head>
+<body class="container-fluid">
+
+<nav class="navbar navbar-expand-sm bg-dark text-light justify-content-center p-3 ">
+    <div class=" container- ">
+    <a href="Index.html" class="navbar-brand text-light text-center">Calisthens Fitness V_Library</a>
+    
+</button>
+</div>
+
+</nav>
+
+ 
+  <div class="row mt-5 ">
+
+    <div class="col-md-1"></div>
+  
+    <div class="col-md-6 ">
+        <div class="ratio ratio-16x9">
+            <iframe id="player" src="https://www.youtube.com/embed" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+
+    
+    <!-- Video Grid -->
+  <div class="col-md-3">
+   
+      
+        <div class="card m-3" onclick="loadVideo('LcILwX7FnFE')">
+          <a src="https://youtu.be/LcILwX7FnFE" class="card-top" 
+          style="
+          text-decoration: none;
+          color: #fff;
+          ">
+          <div class="card-body">
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">Description.</p>
+          </div>
+        </div>
+
+         <div class="card m-3" onclick="loadVideo('LcILwX7FnFE')">
+          <a src="https://youtu.be/LcILwX7FnFE" class="card-top" 
+          style="
+          text-decoration: none;
+          color: #fff;
+          ">
+          <div class="card-body">
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">Description.</p>
+          </div>
+        </div>
+
+         <div class="card m-3" onclick="loadVideo('LcILwX7FnFE')">
+          <a src="https://youtu.be/LcILwX7FnFE" class="card-top" 
+          style="
+          text-decoration: none;
+          color: #fff;
+          ">
+          <div class="card-body">
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">Description.</p>
+          </div>
+        </div>
+
+          <div class="card m-3" onclick="loadVideo('LcILwX7FnFE')">
+          <a src="https://youtu.be/LcILwX7FnFE" class="card-top" 
+          style="
+          text-decoration: none;
+          color: #fff;
+          ">
+          <div class="card-body">
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">Description.</p>
+          </div>
+        </div>
+
+         <div class="card m-3" onclick="loadVideo('LcILwX7FnFE')">
+          <a src="https://youtu.be/LcILwX7FnFE" class="card-top" 
+          style="
+          text-decoration: none;
+          color: #fff;
+          ">
+          <div class="card-body">
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">Description.</p>
+          </div>
+        </div>
+
+        </div>
+     
+    <div class="col-md-1"></div>
+
+    
+
+</div>
+
+
+
+  <script>
+    function loadVideo(videoId) {
+      document.getElementById('player').src = "https://www.youtube.com/embed/" + videoId;
+    }
+  </script>
+
+
+     <footer class="footer" >
+   <b>Developed by Germain. &copy;2026. All rights Reserved</b>
+      </footer>
+    
+</body>
+</html>
