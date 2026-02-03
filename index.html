@@ -1,145 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calisthens_fitness V-Library</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calisthens_fitness V-Library</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
 
-     <style>
+  <style>
     body {
       background-color: #1d1d1d;
       color: #fff;
     }
-    
     iframe {
       border: none;
       border-radius: 8px;
     }
-    .card {
+    .dropdown-menu {
+      background-color: #161616;
+    }
+    .dropdown-item {
+      color: #fff;
+    }
+    .dropdown-item:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    .btn-custom {
       background-color: #161616;
       color: #fff;
-      cursor: pointer;
-      transition: transform 0.2s;
-      height: auto;
-      width: auto;
+      width: 100%;
     }
-    .card:hover {
-      transform: scale(1.05);
+    .btn-custom:hover {
+      background-color: #333;
+      color: #fff;
     }
-    </style>
-
-
+  </style>
 </head>
 <body class="container-fluid">
 
-<nav class="navbar navbar-expand-sm bg-dark text-light justify-content-center p-3 ">
-    <div class=" container- ">
-    <a href="Index.html" class="navbar-brand text-light text-center">Calisthens Fitness V_Library</a>
-    
-</button>
-</div>
-
-</nav>
-
- 
-  <div class="row mt-5 ">
-
-    <div class="col-md-1"></div>
-  
-    <div class="col-md-6 ">
-        <div class="ratio ratio-16x9">
-            <iframe id="player" src="https://www.youtube.com/embed" allowfullscreen></iframe>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm bg-dark text-light justify-content-center p-3">
+    <div class="container">
+      <a href="Index.html" class="navbar-brand text-light text-center">Calisthens Fitness V_Library</a>
     </div>
-    
+  </nav>
 
-    
-    <!-- Video Grid -->
-  <div class="col-md-3">
-   
-      
-        <div class="card m-3" onclick="loadVideo('LcILwX7FnFE')">
-          <a src="https://youtu.be/LcILwX7FnFE" class="card-top" 
-          style="
-          text-decoration: none;
-          color: #fff;
-          ">
-          <div class="card-body">
-            <h5 class="card-title">Title</h5>
-            <p class="card-text">Description.</p>
-          </div>
-        </div>
-
-         <div class="card m-3" onclick="loadVideo('LcILwX7FnFE')">
-          <a src="https://youtu.be/LcILwX7FnFE" class="card-top" 
-          style="
-          text-decoration: none;
-          color: #fff;
-          ">
-          <div class="card-body">
-            <h5 class="card-title">Title</h5>
-            <p class="card-text">Description.</p>
-          </div>
-        </div>
-
-         <div class="card m-3" onclick="loadVideo('LcILwX7FnFE')">
-          <a src="https://youtu.be/LcILwX7FnFE" class="card-top" 
-          style="
-          text-decoration: none;
-          color: #fff;
-          ">
-          <div class="card-body">
-            <h5 class="card-title">Title</h5>
-            <p class="card-text">Description.</p>
-          </div>
-        </div>
-
-          <div class="card m-3" onclick="loadVideo('LcILwX7FnFE')">
-          <a src="https://youtu.be/LcILwX7FnFE" class="card-top" 
-          style="
-          text-decoration: none;
-          color: #fff;
-          ">
-          <div class="card-body">
-            <h5 class="card-title">Title</h5>
-            <p class="card-text">Description.</p>
-          </div>
-        </div>
-
-         <div class="card m-3" onclick="loadVideo('LcILwX7FnFE')">
-          <a src="https://youtu.be/LcILwX7FnFE" class="card-top" 
-          style="
-          text-decoration: none;
-          color: #fff;
-          ">
-          <div class="card-body">
-            <h5 class="card-title">Title</h5>
-            <p class="card-text">Description.</p>
-          </div>
-        </div>
-
-        </div>
-     
+  <!-- Main Content -->
+  <div class="row mt-5">
     <div class="col-md-1"></div>
 
-    
+    <!-- Video Player -->
+    <div class="col-md-6">
+      <div class="ratio ratio-16x9">
+        <iframe id="player" src="https://www.youtube.com/embed" allowfullscreen></iframe>
+      </div>
+    </div>
 
-</div>
+    <!-- Video Controls -->
+    <div class="col-md-3">
 
+      <!-- Standalone Intro Button -->
+      <div class="m-3">
+        <button class="btn btn-custom" onclick="loadVideo('gtEEEdaTUsE')">Intro – Program Overview</button>
+      </div>
 
+      <!-- Dropdown for Week 1 -->
+      <div class="dropdown m-3">
+        <button class="btn btn-dark dropdown-toggle w-100" type="button" id="week1Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          Week 1 Videos
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="week1Dropdown">
+          <li><a class="dropdown-item" href="#" onclick="loadVideo('4IxOLECixOc')">Day 1 – Foundation</a></li>
+          <li><a class="dropdown-item" href="#" onclick="loadVideo('EdWlhk34OAA')">Day 2 – Intensity</a></li>
+          <li><a class="dropdown-item" href="#" onclick="loadVideo('iwn8lQ7afJg')">Day 3 – Strong Finish</a></li>
+        </ul>
+      </div>
 
+      <div class="dropdown m-3">
+        <button class="btn btn-dark dropdown-toggle w-100" type="button" id="week1Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          Week 2 Videos
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="week1Dropdown">
+          <li><a class="dropdown-item" href="#" onclick="loadVideo('EXcclkxNLRY')">Day 1 – Foundation</a></li>
+          <li><a class="dropdown-item" href="#" onclick="loadVideo('Zg1_4jxocKA')">Day 2 – Intensity</a></li>
+          <li><a class="dropdown-item" href="#" onclick="loadVideo('lhP1c_Q_DrY')">Day 3 – Strong Finish</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-1"></div>
+  </div>
+
+  <!-- Script -->
   <script>
     function loadVideo(videoId) {
       document.getElementById('player').src = "https://www.youtube.com/embed/" + videoId;
     }
   </script>
 
+  <!-- Bootstrap Bundle JS (includes Popper.js) -->
+  <script src="js/bootstrap.bundle.js"></script>
 
-     <footer class="footer" >
-   <b>Developed by Germain. &copy;2026. All rights Reserved</b>
-      </footer>
-    
+  <!-- Footer -->
+  <footer class="footer text-center mt-5 p-3">
+    <b>Developed by Germain. &copy;2026. All rights Reserved</b>
+  </footer>
+
 </body>
 </html>
